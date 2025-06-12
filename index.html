@@ -1,0 +1,20 @@
+<!DOCTYPE html>  <!-- Define el tipo de documento como HTML5. -->
+<html lang="en">  <!-- Inicia el documento HTML y establece el idioma como inglés. -->
+  <head>
+    <meta charset="UTF-8" />  <!-- Define la codificación de caracteres como UTF-8 para asegurar la compatibilidad con caracteres especiales. -->
+    <link rel="icon" href="./assets/img/4geeks.ico" />  <!-- Establece el ícono de la página en la barra de direcciones o pestaña del navegador. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- Hace la página receptiva para dispositivos móviles ajustando el ancho de la pantalla. -->
+    <title>Excuse Generator</title>  <!-- Define el título de la página que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="style.css" />  <!-- Enlaza el archivo de estilos CSS (style.css) a la página. -->
+  </head>
+  <body>
+    <div class="container">  <!-- Crea un contenedor para los elementos dentro de la página. -->
+      <h1>My excuse is:</h1>  <!-- Muestra el encabezado con el texto "My excuse is:" en la página. -->
+      <p id="excuse"></p>  <!-- Crea un párrafo con el id "excuse", donde se mostrará la excusa generada. -->
+      <button id="generateButton">Generate New Excuse</button> <!-- Boton para nueva excusa-->
+    </div>
+
+    <link rel="stylesheet" href="style.css" />  <!-- (Duplicado) Enlaza nuevamente el archivo de estilos CSS. No es necesario aquí, ya que ya está en el head. -->
+    <script type="module" src="app.js"></script>  <!-- Enlaza el archivo JavaScript (app.js) que contiene la lógica para generar la excusa. -->
+  </body>
+</html>
