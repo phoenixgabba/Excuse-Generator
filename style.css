@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Estilos globales */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #222;
@@ -19,12 +18,19 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Animación de la sombra en el contenedor */
+.container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
   font-size: 2em;
   color: #f0c674;
   margin-bottom: 20px;
+  text-transform: uppercase; /* Para hacer el texto más llamativo */
 }
 
 p {
@@ -35,18 +41,22 @@ p {
 button {
   background-color: #f0c674;
   color: #222;
-  font-size: 1em;
+  font-size: 1.1em;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Efecto hover para el botón */
 button:hover {
   background-color: #d4a136;
+  transform: scale(1.05); /* Agrandar un poco el botón */
 }
 
+/* Efecto activo para el botón */
 button:active {
   background-color: #b07f2a;
+  transform: scale(1); /* Vuelve al tamaño original */
 }
