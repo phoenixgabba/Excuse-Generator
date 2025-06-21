@@ -1,7 +1,4 @@
-import "bootstrap"; // Importa la librería de Bootstrap para utilizar sus estilos y componentes.
-import "/style.css"; // Importa el archivo CSS global (style.css). Vite lo maneja automáticamente.
-
-window.onload = function () {  // Función que se ejecutará cuando la página haya cargado completamente.
+window.onload = function () {
   const who = ["The dog", "My grandma", "The mailman", "My bird"];
   const action = ["ate", "peed", "crushed", "broke"];
   const what = ["my homework", "my phone", "the car"];
@@ -20,15 +17,13 @@ window.onload = function () {  // Función que se ejecutará cuando la página h
     let randomWhen = when[Math.floor(Math.random() * when.length)];
 
     let excuse = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
-    console.log("Excuse generated:", excuse);  // Para verificar en la consola si se genera la excusa correctamente
-    document.getElementById("excuse").innerText = excuse;  // Actualiza el texto en el HTML con la excusa generada.
+    console.log("Excuse generated:", excuse);
+    document.getElementById("excuse").innerText = excuse;
   }
 
-  // Inicializar con una excusa al cargar la página
   generateExcuse();
 
-  // Asociar el evento del botón para generar una nueva excusa
-  document.getElementById("generateButton").onclick = function() {
+  document.getElementById("generateButton").onclick = function () {
     console.log("Button clicked! Generating a new excuse...");
     generateExcuse();
   };
